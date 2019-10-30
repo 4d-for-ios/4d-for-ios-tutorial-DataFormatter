@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="7">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<web>
+			<standalone_server>
+				<configuration allow_ssl="false" port_number="8099" publish_at_startup="true"/>
+				<rest launch_at_startup="true"/>
+				<webservices>
+					<server name="A_WebService"/>
+				</webservices>
+			</standalone_server>
+		</web>
+		<server>
+			<network>
+				<options publication_name="Banking App"/>
+			</network>
+		</server>
+	</com.4d>
+</preferences>
