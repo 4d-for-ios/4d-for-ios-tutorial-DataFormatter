@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Banking App" uuid="3B357011CA3C4B4CA9A95223728323A3" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Numbers" uuid="F9E932B998BB4DDCA2DACF9DEE96C294" id="1">
+		<field name="ID" uuid="F6DD181D9082422F86588FB52B13209D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="LastName" uuid="47B788EE290040A9ACA25A9681C4220F" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="FirstName" uuid="18BC0998A69948218B3EE2D815D82A0B" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Job" uuid="981B1D1CC7B54754A1E542CA9B0F5F0E" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="Company" uuid="DCF26B2E1F5A49FDB364E3B790C64B21" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="Email" uuid="D48BFDCA71F94EC380361B6E7A71ADC9" type="10" limiting_length="255" never_null="true" id="6"/>
+		<field name="Phone" uuid="78864FC63CED452EB1BC1DD6FBF8B01E" type="10" limiting_length="255" never_null="true" id="7"/>
+		<field name="AvailableCredit" uuid="57EAAB54D04F497B8943F86DC565ECD9" type="3" never_null="true" id="8"/>
+		<field name="CreditScore" uuid="306586188E144685B207E17A75361B54" type="6" never_null="true" id="9"/>
+		<field name="CurrentBalance" uuid="8D49B127480940FBBC6DC0FC98757FB4" type="3" never_null="true" id="10"/>
+		<field name="PercentUsed" uuid="B1959F72DA0343B685F7D187595A12A6" type="6" never_null="true" id="11"/>
+		<field name="CreditLimit" uuid="A5685AC78DC74CA1B8FC9A4FDE38ACA6" type="1" never_null="true" id="12"/>
+		<field name="CreditDate" uuid="CC103958F9CB44AE8C2D3F239EB0BF71" type="8" never_null="true" id="13"/>
+		<field name="__GlobalStamp" uuid="49837F485F184CF592E77199AA22FFD5" type="5" id="14"/>
+		<primary_key field_name="ID" field_uuid="F6DD181D9082422F86588FB52B13209D"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="23">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="329.69140625" height="527.16015625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="__DeletedRecords" uuid="84C27D36F45A4231888E08446372FEFA" id="2" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="ID" uuid="0946C7D19CBB40EA8B38394D29B5618A" type="5" unique="true" autosequence="true" id="1"/>
+		<field name="__Stamp" uuid="FB9652450EB747FEACB9F0081F877A27" type="5" id="2"/>
+		<field name="__TableNumber" uuid="5AF9AB722B814C7EA88713130A7F8AC9" type="4" id="3"/>
+		<field name="__TableName" uuid="5F8C0C7C323E47BC8429DB7AB3E6099F" type="10" limiting_length="255" id="4"/>
+		<field name="__PrimaryKey" uuid="274FD559169A417E8F1FA37AAA0E8A14" type="10" limiting_length="255" id="5"/>
+		<primary_key field_name="ID" field_uuid="0946C7D19CBB40EA8B38394D29B5618A"/>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="9223BCCE116D43F68190BDD831B3C694" type="7">
+		<field_ref uuid="F6DD181D9082422F86588FB52B13209D" name="ID">
+			<table_ref uuid="F9E932B998BB4DDCA2DACF9DEE96C294" name="Numbers"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__DeletedRecords__Stamp" uuid="9AA813A25C1846288F67553B6E6031A2" type="7">
+		<field_ref uuid="FB9652450EB747FEACB9F0081F877A27" name="__Stamp">
+			<table_ref uuid="84C27D36F45A4231888E08446372FEFA" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="__DeletedRecordsID" uuid="B5AE33EFAC9D4AECB54DE6707D771DE1" type="7">
+		<field_ref uuid="0946C7D19CBB40EA8B38394D29B5618A" name="ID">
+			<table_ref uuid="84C27D36F45A4231888E08446372FEFA" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_numbers" uuid="ED9FE86B737B4F3498EFD51FB08783D8" type="7">
+		<field_ref uuid="49837F485F184CF592E77199AA22FFD5" name="__GlobalStamp">
+			<table_ref uuid="F9E932B998BB4DDCA2DACF9DEE96C294" name="Numbers"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="Banking App" structure_file_name="Banking App" data_file_path=":Banking App.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

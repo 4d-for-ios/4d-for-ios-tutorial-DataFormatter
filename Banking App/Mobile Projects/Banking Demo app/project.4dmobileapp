@@ -1,0 +1,344 @@
+{
+	"info": {
+		"version": 8,
+		"target": [
+			"iOS",
+			"android"
+		],
+		"ideVersion": "1970",
+		"ideBuildVersion": "281561",
+		"componentBuild": 281561
+	},
+	"product": {
+		"name": "Banking",
+		"version": "1.0",
+		"copyright": "©2022 All rights reserved",
+		"bundleIdentifier": "com.myCompany.Banking"
+	},
+	"organization": {
+		"name": "My Company",
+		"teamId": "BSE3R8CQZT",
+		"id": "com.myCompany",
+		"identifier": "com.myCompany.Banking"
+	},
+	"developer": {
+		"name": "Vanessa Talbot",
+		"id": ""
+	},
+	"server": {
+		"urls": {
+			"production": ""
+		}
+	},
+	"main": {
+		"navigationTitle": "My App",
+		"navigationType": "tabbar",
+		"order": [
+			"1"
+		]
+	},
+	"dataSource": {
+		"source": "local",
+		"doNotGenerateDataAtEachBuild": false,
+		"doNotExportImages": false
+	},
+	"ui": {
+		"navigationTransition": "PresentSlideSegue",
+		"dominantColor": "rgb(140,17,17)"
+	},
+	"dataModel": {
+		"1": {
+			"": {
+				"name": "Numbers",
+				"label": "Numbers",
+				"shortLabel": "Numbers",
+				"primaryKey": "ID",
+				"embedded": true
+			},
+			"8": {
+				"fieldNumber": 8,
+				"name": "AvailableCredit",
+				"kind": "storage",
+				"fieldType": 8,
+				"label": "Available Credit",
+				"shortLabel": "Available Credit",
+				"valueType": "number",
+				"type": 3,
+				"format": "currencyDollar"
+			},
+			"5": {
+				"fieldNumber": 5,
+				"name": "Company",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Company",
+				"shortLabel": "Company",
+				"valueType": "string",
+				"type": 10
+			},
+			"13": {
+				"fieldNumber": 13,
+				"name": "CreditDate",
+				"kind": "storage",
+				"fieldType": 4,
+				"label": "Credit Date",
+				"shortLabel": "Credit Date",
+				"valueType": "date",
+				"type": 8,
+				"format": "shortDate"
+			},
+			"12": {
+				"fieldNumber": 12,
+				"name": "CreditLimit",
+				"kind": "storage",
+				"fieldType": 6,
+				"label": "Credit Limit",
+				"shortLabel": "Credit Limit",
+				"valueType": "bool",
+				"type": 1,
+				"format": "noOrYes"
+			},
+			"9": {
+				"fieldNumber": 9,
+				"name": "CreditScore",
+				"kind": "storage",
+				"fieldType": 1,
+				"label": "Credit Score",
+				"shortLabel": "Credit Score",
+				"valueType": "number",
+				"type": 6,
+				"format": "integer"
+			},
+			"10": {
+				"fieldNumber": 10,
+				"name": "CurrentBalance",
+				"kind": "storage",
+				"fieldType": 8,
+				"label": "Current Balance",
+				"shortLabel": "Current Balance",
+				"valueType": "number",
+				"type": 3,
+				"format": "currencyDollar"
+			},
+			"6": {
+				"fieldNumber": 6,
+				"name": "Email",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Email",
+				"shortLabel": "Email",
+				"valueType": "string",
+				"type": 10
+			},
+			"3": {
+				"fieldNumber": 3,
+				"name": "FirstName",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "First Name",
+				"shortLabel": "First Name",
+				"valueType": "string",
+				"type": 10
+			},
+			"1": {
+				"fieldNumber": 1,
+				"name": "ID",
+				"kind": "storage",
+				"fieldType": 9,
+				"label": "ID",
+				"shortLabel": "ID",
+				"valueType": "number",
+				"type": 4
+			},
+			"4": {
+				"fieldNumber": 4,
+				"name": "Job",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Job",
+				"shortLabel": "Job",
+				"valueType": "string",
+				"type": 10
+			},
+			"2": {
+				"fieldNumber": 2,
+				"name": "LastName",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Last Name",
+				"shortLabel": "Last Name",
+				"valueType": "string",
+				"type": 10
+			},
+			"11": {
+				"fieldNumber": 11,
+				"name": "PercentUsed",
+				"kind": "storage",
+				"fieldType": 1,
+				"label": "Percent Used",
+				"shortLabel": "Percent Used",
+				"valueType": "number",
+				"type": 6,
+				"format": "percent"
+			},
+			"7": {
+				"fieldNumber": 7,
+				"name": "Phone",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Phone",
+				"shortLabel": "Phone",
+				"valueType": "string",
+				"type": 10
+			}
+		}
+	},
+	"list": {
+		"1": {
+			"form": "Tasks",
+			"fields": [
+				{
+					"fieldNumber": 2,
+					"name": "LastName",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "LastName"
+				},
+				{
+					"fieldNumber": 3,
+					"name": "FirstName",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "FirstName"
+				},
+				{
+					"fieldNumber": 4,
+					"name": "Job",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "Job"
+				},
+				{
+					"fieldNumber": 9,
+					"name": "CreditScore",
+					"kind": "storage",
+					"fieldType": 1,
+					"path": "CreditScore",
+					"label": "Credit Score",
+					"shortLabel": "Credit Score",
+					"format": "integer"
+				},
+				null,
+				null
+			],
+			"searchableField": [
+				{
+					"fieldNumber": 3,
+					"name": "FirstName",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "FirstName"
+				},
+				{
+					"fieldNumber": 2,
+					"name": "LastName",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "LastName"
+				}
+			]
+		}
+	},
+	"detail": {
+		"1": {
+			"form": "Tasks Plus",
+			"fields": [
+				{
+					"fieldNumber": 2,
+					"name": "LastName",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "LastName"
+				},
+				{
+					"fieldNumber": 3,
+					"name": "FirstName",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "FirstName"
+				},
+				{
+					"fieldNumber": 9,
+					"name": "CreditScore",
+					"kind": "storage",
+					"fieldType": 1,
+					"path": "CreditScore",
+					"label": "Credit Score",
+					"shortLabel": "Credit Score",
+					"format": "integer"
+				},
+				{
+					"fieldNumber": 8,
+					"name": "AvailableCredit",
+					"kind": "storage",
+					"fieldType": 8,
+					"path": "AvailableCredit",
+					"label": "Available Credit",
+					"shortLabel": "Available Credit",
+					"format": "currencyDollar"
+				},
+				{
+					"fieldNumber": 10,
+					"name": "CurrentBalance",
+					"kind": "storage",
+					"fieldType": 8,
+					"path": "CurrentBalance",
+					"label": "Current Balance",
+					"shortLabel": "Current Balance",
+					"format": "currencyDollar"
+				},
+				{
+					"fieldNumber": 11,
+					"name": "PercentUsed",
+					"kind": "storage",
+					"fieldType": 1,
+					"path": "PercentUsed",
+					"label": "Percent Used",
+					"shortLabel": "Percent Used",
+					"format": "percent"
+				},
+				{
+					"fieldNumber": 12,
+					"name": "CreditLimit",
+					"kind": "storage",
+					"fieldType": 6,
+					"path": "CreditLimit",
+					"label": "Credit Limit",
+					"shortLabel": "Credit Limit",
+					"format": "noOrYes"
+				},
+				{
+					"fieldNumber": 4,
+					"name": "Job",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "Job"
+				},
+				{
+					"fieldNumber": 5,
+					"name": "Company",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "Company"
+				},
+				{
+					"fieldNumber": 6,
+					"name": "Email",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "Email"
+				}
+			]
+		}
+	}
+}
