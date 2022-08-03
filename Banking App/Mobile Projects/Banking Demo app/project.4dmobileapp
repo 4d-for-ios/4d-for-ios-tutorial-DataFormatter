@@ -64,7 +64,7 @@
 				"shortLabel": "Available Credit",
 				"valueType": "number",
 				"type": 3,
-				"format": "currencyDollar"
+				"format": "integer"
 			},
 			"5": {
 				"fieldNumber": 5,
@@ -85,7 +85,7 @@
 				"shortLabel": "Credit Date",
 				"valueType": "date",
 				"type": 8,
-				"format": "shortDate"
+				"format": "mediumDate"
 			},
 			"12": {
 				"fieldNumber": 12,
@@ -96,7 +96,7 @@
 				"shortLabel": "Credit Limit",
 				"valueType": "bool",
 				"type": 1,
-				"format": "noOrYes"
+				"format": "falseOrTrue"
 			},
 			"9": {
 				"fieldNumber": 9,
@@ -107,7 +107,7 @@
 				"shortLabel": "Credit Score",
 				"valueType": "number",
 				"type": 6,
-				"format": "integer"
+				"format": "real"
 			},
 			"10": {
 				"fieldNumber": 10,
@@ -118,7 +118,7 @@
 				"shortLabel": "Current Balance",
 				"valueType": "number",
 				"type": 3,
-				"format": "currencyDollar"
+				"format": "integer"
 			},
 			"6": {
 				"fieldNumber": 6,
@@ -179,7 +179,7 @@
 				"shortLabel": "Percent Used",
 				"valueType": "number",
 				"type": 6,
-				"format": "percent"
+				"format": "real"
 			},
 			"7": {
 				"fieldNumber": 7,
@@ -226,7 +226,7 @@
 					"path": "CreditScore",
 					"label": "Credit Score",
 					"shortLabel": "Credit Score",
-					"format": "integer"
+					"format": "real"
 				},
 				null,
 				null
@@ -275,7 +275,7 @@
 					"path": "CreditScore",
 					"label": "Credit Score",
 					"shortLabel": "Credit Score",
-					"format": "integer"
+					"format": "real"
 				},
 				{
 					"fieldNumber": 8,
@@ -285,7 +285,7 @@
 					"path": "AvailableCredit",
 					"label": "Available Credit",
 					"shortLabel": "Available Credit",
-					"format": "currencyDollar"
+					"format": "integer"
 				},
 				{
 					"fieldNumber": 10,
@@ -295,7 +295,7 @@
 					"path": "CurrentBalance",
 					"label": "Current Balance",
 					"shortLabel": "Current Balance",
-					"format": "currencyDollar"
+					"format": "integer"
 				},
 				{
 					"fieldNumber": 11,
@@ -305,7 +305,7 @@
 					"path": "PercentUsed",
 					"label": "Percent Used",
 					"shortLabel": "Percent Used",
-					"format": "percent"
+					"format": "real"
 				},
 				{
 					"fieldNumber": 12,
@@ -315,7 +315,7 @@
 					"path": "CreditLimit",
 					"label": "Credit Limit",
 					"shortLabel": "Credit Limit",
-					"format": "noOrYes"
+					"format": "falseOrTrue"
 				},
 				{
 					"fieldNumber": 4,
