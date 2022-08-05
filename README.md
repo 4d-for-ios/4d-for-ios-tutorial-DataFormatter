@@ -10,4 +10,4 @@ In this tutorial we will:
 
 ## Step by step
 
-Download our 4D Starter project. Then, follow all steps explained here.
+Download our 4D Starter project. Then, follow all steps explained [here](https://developer.4d.com/go-mobile/docs/tutorials/data-formatter/use-data-formatter).
